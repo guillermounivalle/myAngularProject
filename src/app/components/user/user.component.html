@@ -1,0 +1,10 @@
+<h1>User Main Component</h1>
+
+<app-user-new (createNewUserEvent)="create($event)"></app-user-new>
+
+<app-user-list 
+  [users]="users"
+  (deleteUserEvent)="deleteUser($event)"
+  (updateUserEvent)="updateUser($event)">
+</app-user-list>
+
